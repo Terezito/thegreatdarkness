@@ -1,0 +1,134 @@
+add_namespace = kansas
+
+# Kansas Claims Missouri (America)
+country_event = {
+	id = kansas.1
+	title = kansas.1.t
+	desc = kansas.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = kansas.1.a
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						is_puppet_of = KSC
+						is_in_faction_with = KSC
+					}
+				}
+				KSC = {
+					surrender_progress > 0.09
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_in_faction_with = ROOT
+					has_war_with = KSC
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					NOT = {
+						tag = KSC
+					}
+					RAD = {
+						is_puppet_of = PREV
+					}
+					NOT = {
+						is_in_faction_with = KSC
+					}
+				}
+			}
+		}
+		KSC = {
+			country_event = { days = 1 id = kansas.2 }
+		}
+	}
+	option = { # Refuse
+		name = kansas.1.b		
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					KSC = {
+						surrender_progress > 0.09
+					}
+				}
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = ROOT
+						has_war_with = KSC
+					}
+				}
+				NOT = {
+					any_other_country = {
+						NOT = {
+							tag = KSC
+						}
+						RAD = {
+							is_puppet_of = PREV
+						}
+						NOT = {
+							is_in_faction_with = KSC
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_faction_with = KSC
+					RAD = {
+						is_puppet_of = KSC
+					}
+				}
+			}
+		}
+		effect_tooltip = {
+			KSC = {
+				create_wargoal = {
+				type = take_state_focus
+				target = RAD
+				generator = { 373 }
+				}
+				country_event = { days = 1 id = kansas.2 }
+			}
+		}
+		hidden_effect = {
+			KSC = {
+				country_event = { days = 1 id = kansas.2 }
+			}
+		}		
+	}
+}
+
+# Claim Missouri
+country_event = {
+	id = kansas.2
+	title = kansas.2.t
+	desc = kansas.2.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = kansas.2.a
+		KSC = {
+			transfer_state = 373
+			add_state_core = 373
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = apocnews.2 }
+		}
+	}
+}
+
