@@ -18,6 +18,7 @@ tags={
 	"Historical"
 }
 picture="thumbnail.png"
-name="The Great Darkness"
+name="The Great Darkness - Github"
 supported_version="1.11.12"
+path=""
 remote_file_id="2846560719"
