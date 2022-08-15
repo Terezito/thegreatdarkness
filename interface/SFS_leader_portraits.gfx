@@ -1,0 +1,24 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+
+	spriteType = {
+		name = "GFX_portrait_johann_koplenig"
+		texturefile = "gfx/leaders/AUS/Portrait_AUS_Johann_Koplenig.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AUS_arthur_seyss_inquart"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Arthur_Seyss-Inquart.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AUS_karl_egl"
+		texturefile = "gfx/leaders/AUS/Portrait_Austria_Karl_Eglseer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Syngman_Rhee_2"
+		texturefile = "gfx/leaders/KOR/Portrait_KOR_syngman_rhee.dds"
+	}
+}

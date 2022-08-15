@@ -1,0 +1,85 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "sp_event_window"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_sp_event_window"
+		}
+		
+		iconType = {
+			name = "Super_Event_Image_KanMissouri"
+			spriteType = "GFX_sp_event_KanMissouri"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_Image_KansasCityCoup"
+			spriteType = "GFX_sp_event_KansasCityCoup"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_Image_Australia1"
+			spriteType = "GFX_sp_event_Australia1"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_Image_Zealand1"
+			spriteType = "GFX_sp_event_Zealand1"
+			position = {x = 0 y = 0}
+		}
+		
+		###############
+		###INTERFACE###
+		###############
+		
+		iconType = {
+			name = "sp_event_text_underlay"
+			spriteType = "GFX_sp_event_underlay"
+			position = { x = 153 y = 308 }
+		}
+		
+		instantTextBoxType = {
+			name = "super_quote"
+			position = { x = 185 y = 310 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_quote]"
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "super_title"
+			position = { x = -49 y = 20 }
+			font = "hoi_24header"
+			format = center
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "sp_event_close_button"
+			spriteType = "GFX_sp_event_close_button"
+			position = { x = 187 y = 469 }
+			clicksound = click_close
+			buttonText = "[get_super_event_remark]"
+			buttonFont = "hoi_20b"
+		}
+	}
+}
