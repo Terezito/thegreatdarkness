@@ -1001,11 +1001,11 @@ focus = {
 		}
 	}
 focus = {
-		id =  focus_australia
+		id =  focus_india
 		prerequisite = {focus = NZL_Commonwealth_Focus}
 		icon = GFX_goal_nzl_computing
 		cost = 7
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = NZL_Commonwealth_Focus
 		completion_reward = {
@@ -1013,14 +1013,107 @@ focus = {
 		}
 	}
 focus = {
-		id =  focus_australia_expedition
-		prerequisite = {focus = focus_australia}
+		id =  focus_india_expedition
+		prerequisite = {focus = focus_india}
 		icon = GFX_goal_nzl_computing
 		cost = 7
 		x = 0
 		y = 1
-		relative_position_id = focus_australia
+		relative_position_id = focus_india
 		completion_reward = {
+		
+		}
+	}
+focus = {
+		id =  focus_indian_extraction
+		prerequisite = {focus = focus_india_expedition}
+		icon = GFX_goal_nzl_computing
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = focus_india_expedition
+		available = {
+		owns_state = 422
+		owns_state = 423
+		owns_state = 424
+		owns_state = 425
+		owns_state = 320
+		owns_state = 321
+		}
+		completion_reward = {
+		add_resource = {
+		type = chromium
+		amount = 9
+		state = 425
+			}
+		}
+		completion_reward = {
+		add_resource = {
+		type = rubber
+		amount = 5
+		state = 423
+			}
+		}
+		completion_reward = {
+		add_resource = {
+		type = steel
+		amount = 6
+		state = 424
+			}
+		}
+		completion_reward = {
+		add_resource = {
+		type = oil
+		amount = 2
+		state = 424
+			}
+		}
+	}
+focus = {
+		id =  focus_india_building
+		prerequisite = {focus = focus_india_expedition}
+		icon = GFX_goal_nzl_computing
+		cost = 7
+		x = 2
+		y = 1
+		available = {
+		owns_state = 422
+		owns_state = 423
+		owns_state = 424
+		owns_state = 425
+		owns_state = 320
+		owns_state = 321
+		}
+		relative_position_id = focus_india_expedition
+		completion_reward = {
+		add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					province = 12247
+					level = 2
+					instant_build = yes
+		
+		}
+		add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					province = 8011
+					level = 3
+					instant_build = yes
+		
+			}
+		}
+	}
+focus = {
+		id =  focus_australia
+		prerequisite = {focus = NZL_Commonwealth_Focus}
+		icon = GFX_goal_nzl_computing
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = NZL_Commonwealth_Focus
+		completion_reward = {
+				}
 		
 		}
 	}

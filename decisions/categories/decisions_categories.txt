@@ -3,7 +3,7 @@ indiaNZ_category = {
 	
 	visible ={
 	tag = NZl
-	has_completed_focus = focus_australia_expedition
+	has_completed_focus = focus_india_expedition
 	}
 		
 	allowed = {
