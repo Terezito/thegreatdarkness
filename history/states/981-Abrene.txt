@@ -1,0 +1,22 @@
+state={
+	id=981
+	name="STATE_981"
+
+	history={
+		owner = RAD
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = LAT
+
+	}
+
+	provinces={
+		13285 13286 
+	}
+	manpower=21000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pRADoral
+}

@@ -1,0 +1,22 @@
+state={
+	id=949
+	name="STATE_949"
+
+	history={
+		owner = RAD
+		add_core_of = RAD
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		480 
+	}
+	manpower=21000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

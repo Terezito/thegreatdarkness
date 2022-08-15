@@ -1,0 +1,40 @@
+state={
+	id=985
+	name="STATE_985"
+
+	history={
+		owner = NZL
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 3
+			7783 = {
+				naval_base = 3
+
+			}
+			12604 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			7783 10 
+		}
+		victory_points = {
+			12604 5 
+		}
+		add_core_of = NZL
+
+	}
+
+
+	provinces={
+		7783 12604 
+	}
+	manpower=6836
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

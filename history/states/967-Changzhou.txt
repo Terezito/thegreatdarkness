@@ -1,0 +1,27 @@
+state={
+	id=967
+	name="STATE_967"
+
+	history={
+		owner = RAD
+		add_core_of = RAD
+		add_core_of = RAD
+		buildings = {
+			infrastructure = 3
+
+		}
+		1938.10.25 = {
+			controller = RAD
+
+		}
+
+	}
+
+	provinces={
+		996 7120 11913 11982 13142 
+	}
+	manpower=4004000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

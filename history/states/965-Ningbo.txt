@@ -1,0 +1,36 @@
+state={
+	id=965
+	name="STATE_965"
+
+	history={
+		owner = RAD
+		add_core_of = RAD
+		add_core_of = RAD
+		victory_points = {
+			9974 1 
+		}
+		buildings = {
+			infrastructure = 2
+			9974 = {
+				naval_base = 3
+				coRADal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+		1938.10.25 = {
+			controller = RAD
+
+		}
+
+	}
+
+	provinces={
+		9974 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
