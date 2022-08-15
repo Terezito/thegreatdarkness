@@ -288,4 +288,28 @@ news_event = {
 		}
 	}
 }
-
+##phillip1ST##
+news_event = {
+	id = zealandianews.6
+	title = zealandianews.6.t
+	desc = zealandianews.6.d
+	picture = GFX_news_event_008
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 100 }
+			NZL = {
+				create_country_leader = {
+				name = "Phillip 1"
+				desc = "Phillip_1_desc"
+				picture = GFX_leader_unknown
+				expire = "2000.1.1"
+				ideology = despotism
+				traits = {}
+			}
+		}
+	}
+}
+ 
+ 
