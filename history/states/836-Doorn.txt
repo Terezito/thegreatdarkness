@@ -1,0 +1,31 @@
+
+state={
+	id=836
+	name="STATE_836"
+
+	history={
+		owner = DOR
+		add_core_of = HOL
+		add_core_of = DOR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+
+		}
+		victory_points = {
+			6500 5 
+		}
+		victory_points = {
+			6496 3 
+		}
+
+	}
+
+	provinces={
+		6496 6500 11456 
+	}
+	manpower=5644
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

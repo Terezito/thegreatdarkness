@@ -1,0 +1,37 @@
+
+state={
+	id=844
+	name="STATE_844"
+	resources={
+		oil=320.000
+		aluminium=50.000
+	}
+
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 9
+			air_base = 3
+			10337 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = {
+			10337 10 
+		}
+
+	}
+
+	provinces={
+		1500 1927 4884 7628 10337 10504 12341 12410 12486 
+	}
+	manpower=58247
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=9.000
+}

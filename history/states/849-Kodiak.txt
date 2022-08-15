@@ -1,0 +1,30 @@
+
+state={
+	id=849
+	name="STATE_849"
+
+	history={
+		owner = ALK
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			4833 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			4833 1 
+		}
+
+	}
+
+	provinces={
+		4833 13091 
+	}
+	manpower=67500
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
