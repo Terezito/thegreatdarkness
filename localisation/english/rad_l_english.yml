@@ -1,0 +1,18 @@
+﻿l_english:
+ ###RAD###
+ RAD_neutrality:0 "Cold Barren Land"
+ RAD_fascism:0 "Cold Barren Land"
+ RAD_democratic:0 "Cold Barren Land"
+ RAD_communism:0 "Cold Barren Land"
+ radiation_zone:0 "Cold Barren Land"
+ RAD_radiations:0 "Cold Barren Land"
+ Cold Barren Land_colonization:0 "Colonization Of the Cold Lands"
+ radiations:0 "Cold Barren Land"
+ colonization.0.t:0 "Colonization of Land"
+ colonization.0.d:0 "With the land nearby us being unclaimed, the government is asking for you to seize it and claim it for yourself."
+ colonization.0.a:0 "Yes, Claim it"
+ colonization.0.b:0 "No"
+ colonization.1.t:0 "Colonization of Land"
+ colonization.1.d:0 "One month ago we could recolonize the lost land, but it's untaken so we still can! Let's go!"
+ colonization.1.a:0 "Yes, colonize"
+ colonization.1.b:0 "No, still wait."
