@@ -3112,7 +3112,7 @@ indiaNZ_category_422 = {
         has_country_flag = {
         flag = NZL_colonization_flag
         value > 0
-		has_completed_focus = ZL_Commonwealth_Focus
+		
         }
     }
 
@@ -3151,12 +3151,12 @@ indiaNZ_category_423 = {
             has_country_flag = {
             flag = NZL_colonization_flag
             value > 0
-			has_completed_focus = ZL_Commonwealth_Focus
+			
             }
         }
 
     allowed = {
-        has_completed_focus = ZL_Commonwealth_Focus
+        
     }
 
     remove_effect = {
@@ -3192,13 +3192,13 @@ indiaNZ_category_424 = {
         has_country_flag = {
             flag = NZL_colonization_flag
             value > 0
-			has_completed_focus = ZL_Commonwealth_Focus
+			
             }
         }
 
     available = {
         has_stability > 0.1
-        has_completed_focus = ZL_Commonwealth_Focus
+        
     }
 
 
@@ -3235,13 +3235,11 @@ indiaNZ_category_425 = {
         has_country_flag = {
             flag = NZL_colonization_flag
             value > 0
-			has_completed_focus = ZL_Commonwealth_Focus
             }
         }
 
     available = {
         has_stability > 0.1
-        has_completed_focus = ZL_Commonwealth_Focus
     }
 
 
