@@ -1,0 +1,9 @@
+GEO_reichskommissariat = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+
+BRI_GER = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}

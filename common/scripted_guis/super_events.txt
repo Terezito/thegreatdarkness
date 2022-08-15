@@ -1,0 +1,74 @@
+scripted_gui = {
+
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = Super_Event_Visible
+		}
+		
+		triggers = {
+			Super_Event_Image_KanMissouri_visible = {
+				has_global_flag = kscmissouri
+			}
+		}
+		
+		triggers = {
+			Super_Event_Image_KansasCityCoup_visible = {
+				has_global_flag = ksc_kcw
+			}
+		}
+		
+		triggers = {
+			Super_Event_Image_Australia1_visible = {
+				has_global_flag = australia1
+			}
+		}
+		
+		triggers = {
+			Super_Event_Image_Zealand1_visible = {
+				has_global_flag = zealand1
+			}
+		}
+
+
+		############
+		###BUTTON###
+		############
+		
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+				if = {
+					limit = {
+						has_global_flag = kscmissouri
+					}
+					clr_global_flag = kscmissouri
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = ksc_kcw
+					}
+					clr_global_flag = ksc_kcw
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = australia1
+					}
+					clr_global_flag = australia1
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = zealand1
+					}
+					clr_global_flag = zealand1
+				}
+			}
+		}
+	}
+}

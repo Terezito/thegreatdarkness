@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		RAD_radiations = {
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_get_ally_desire_factor = -1000
+				industry_repair_factor = -100.0
+				MONTHLY_POPULATION = -4.0
+				training_time_factor = 50.0
+				local_resources_factor = -500.0
+				industrial_capacity_factory = -200.0
+				industrial_capacity_dockyard = -300.0
+				global_building_slots_factor = -500.0
+			}
+		}
+		wasteland_colonization = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				political_power_gain = -20
+			}			
+		}
+	}
+}

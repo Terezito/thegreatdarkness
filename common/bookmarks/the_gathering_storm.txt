@@ -1,0 +1,99 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1962.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "NZL"
+		default = yes
+		
+		"BAY"={
+			history = "BAY_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "La Resistance" } }
+			ideas = {
+				sour_loser
+
+			}
+			focuses = {
+
+			}
+		}
+		"DOR"={
+			history = "DOR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"DDR"={
+			history = "DDR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				triumphant_will
+				GER_rocketry_idea
+				GER_clamp_down_on_fascism
+			}
+			focuses = {
+
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"NZL"={
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		""={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,105 @@
+ideas = {
+
+	country = {
+		triumphant_will = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			modifier = {
+				political_power_gain = 1
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		GER_rocketry_idea = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_rocket_site_factor = 0.15
+			}
+	
+		}
+
+		GER_clamp_down_on_fascism = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				 has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			modifier = {
+				fascism_drift = -5.05
+			}
+		}
+		
+		joint_government = {
+			picture = generic_local_self_management
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 5
+				consumer_goods_factor = 0.3
+				conscription_factor = -0.5
+				join_faction_tension = 0.20
+				local_resources_factor = -0.2
+			}
+		}
+		
+		DDR_political_violence = {
+
+			allowed = {
+				original_tag = DDR
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+		
+		

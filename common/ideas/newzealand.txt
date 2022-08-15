@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+	
+		NZL_king_philip = {
+			
+			allowed = {
+				original_tag = NZL
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = NZL
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001				
+			}
+		}
+	}
+}

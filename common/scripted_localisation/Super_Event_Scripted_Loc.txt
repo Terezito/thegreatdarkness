@@ -1,0 +1,98 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = kscmissouri
+        }
+        localization_key = "sp_event_KanMissouri"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = ksc_kcw
+        }
+        localization_key = "sp_event_kansasKCW"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = australia1
+        }
+        localization_key = "sp_event_australia1"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = zealand1
+        }
+        localization_key = "sp_event_zealand1"
+    }
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = kscmissouri
+        }
+        localization_key = "sp_event_KanMissouri_REMARK"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = ksc_kcw
+        }
+        localization_key = "sp_event_kansasKCW_REMARK"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = australia1
+        }
+        localization_key = "sp_event_australia1_REMARK"
+    }
+	
+    text = { 
+        trigger = {
+            has_global_flag = zealand1
+        }
+        localization_key = "sp_event_zealand1_REMARK"
+    }
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = kscmissouri
+        }
+        localization_key = "sp_event_KanMissouri_QUOTE"
+    }
+	
+    text = {
+        trigger = {
+            has_global_flag = ksc_kcw
+        }
+        localization_key = "sp_event_kansasKCW_QUOTE"
+    }
+    
+    text = {
+        trigger = {
+            has_global_flag = australia1
+        }
+        localization_key = "sp_event_australia1_QUOTE"
+    }
+   
+    text = {
+        trigger = {
+            has_global_flag = zealand1
+        }
+        localization_key = "sp_event_zealand1_QUOTE"
+    }
+}

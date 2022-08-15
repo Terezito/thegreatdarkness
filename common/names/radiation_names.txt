@@ -1,0 +1,15 @@
+RAD = {
+	male = {
+		names = { 
+		Radiations
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+	Radiations
+	}
+	callsigns = { }
+}
+
