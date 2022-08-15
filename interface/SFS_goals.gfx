@@ -1,0 +1,132 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_goal_anschluss_ger"
+		texturefile = "gfx/interface/goals/goal_anschluss_ger.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_czech"
+		texturefile = "gfx/interface/goals/focus_friend_czech.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_denmark"
+		texturefile = "gfx/interface/goals/focus_friend_denmark.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_sweden"
+		texturefile = "gfx/interface/goals/focus_friend_sweden.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_finnish_deal"
+		texturefile = "gfx/interface/goals/focus_finnish_deal.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_hun_protect_czechoslovakia"
+		texturefile = "gfx/interface/goals/focus_hun_protect_czechoslovakia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_hun_protect_austria"
+		texturefile = "gfx/interface/goals/focus_hun_protect_austria.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_hun_proclaim_greater_hungary"
+		texturefile = "gfx/interface/goals/focus_hun_proclaim_greater_hungary.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_friend_tibet"
+		texturefile = "gfx/interface/goals/focus_friend_tibet.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_american_first"
+		texturefile = "gfx/interface/goals/goal_american_first.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_yug_greater_yugoslavia"
+		texturefile = "gfx/interface/goals/focus_yug_greater_yugoslavia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_soviet_deal"
+		texturefile = "gfx/interface/goals/focus_soviet_deal.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_shade_alliance"
+		texturefile = "gfx/interface/goals/focus_shade_alliance.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_fate_of_yugoslavia"
+		texturefile = "gfx/interface/goals/goal_fate_of_yugoslavia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_fate_of_czechoslovakia"
+		texturefile = "gfx/interface/goals/goal_fate_of_czechoslovakia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_fate_of_greece"
+		texturefile = "gfx/interface/goals/goal_fate_of_greece.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_free_for_phi"
+		texturefile = "gfx/interface/goals/goal_free_for_phi.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_benelux"
+		texturefile = "gfx/interface/goals/focus_generic_benelux.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_ally_netherlands"
+		texturefile = "gfx/interface/goals/focus_generic_ally_netherlands.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_rebuild_high_sea_fleet"
+		texturefile = "gfx/interface/goals/focus_rebuild_high_sea_fleet.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_our_place_sun"
+		texturefile = "gfx/interface/goals/focus_our_place_sun.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_danube"
+		texturefile = "gfx/interface/goals/focus_generic_danube.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_ally_norway"
+		texturefile = "gfx/interface/goals/focus_generic_ally_norway.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_ally_poland"
+		texturefile = "gfx/interface/goals/focus_ally_poland.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_central_powers"
+		texturefile = "gfx/interface/goals/focus_central_powers.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_nzl_computing"
+		texturefile = "gfx/interface/goals/nzl/nzl_computing.dds"
+	}
+}

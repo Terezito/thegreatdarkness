@@ -1,0 +1,124 @@
+add_namespace = super
+
+country_event = {	#missouri=kansas
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		KSC = { has_government = democratic }
+		
+		OR = { #Missouri
+			KSC = { has_full_control_of_state = 373 }
+			any_other_country = {
+				is_in_faction_with = KSC
+				has_full_control_of_state = 373
+			}
+		}
+	}
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = kscmissouri
+		set_global_flag = Super_Event_Visible
+		play_song = "super_missourikansas"
+	}
+}
+
+country_event = { #Kansas Coup
+	id = super.2
+	title = super.2.t
+	desc = super.2.d 
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		KSC = { has_completed_focus = KSC_coup_albert }
+	}
+	
+	option = {
+		name = super.2.a 
+		
+		set_global_flag = ksc_kcw
+		set_global_flag = Super_Event_Visible
+		play_song = "super_ksc_civil_war"
+	}
+}
+country_event = {	#colonizationofaustralia
+	id = super.3
+	title = super.3.t
+	desc = super.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AST = { has_government = democratic }
+		
+		OR = { #Victoria
+			AST = { has_full_control_of_state = 517 }
+			any_other_country = {
+				is_in_faction_with = AST
+				has_full_control_of_state = AST
+			}
+		}
+	}
+
+	option = {
+		name = super.3.a
+		
+        set_global_flag = australia1
+		set_global_flag = Super_Event_Visible
+		play_song = "super_australia1"
+	}
+}
+country_event = {	#nixon
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NZL = { 
+				has_country_leader = {
+					name = "Richard Nixon"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = zealand1
+		set_global_flag = Super_Event_Visible
+		play_song = "super_zealand1"
+	}
+}
+

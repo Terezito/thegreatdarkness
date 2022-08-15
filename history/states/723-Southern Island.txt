@@ -1,0 +1,37 @@
+
+state={
+	id=723
+	name="STATE_723"
+	resources={
+		tungsten=4.000
+	}
+
+	history={
+		owner = NZL
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			4819 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			4819 1 
+		}
+		victory_points = {
+			5195 1 
+		}
+		add_core_of = NZL
+
+	}
+
+	provinces={
+		4819 7839 8204 10650 12632 
+	}
+	manpower=7198
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

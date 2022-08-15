@@ -1,0 +1,16 @@
+music = {
+	name = "super_missourikansas"
+	file = "kanmissouri.ogg"
+}
+music = {
+	name = "super_ksc_civil_war"
+	file = "kansascitycoup.ogg"
+}
+music = {
+	name = "super_australia1"
+	file = "australia1.ogg"
+}
+music = {
+	name = "super_zealand1"
+	file = "zealand1.ogg"
+}

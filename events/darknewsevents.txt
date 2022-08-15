@@ -1,0 +1,43 @@
+###########################
+# News Events
+###########################
+
+add_namespace = apocnews
+
+# Kansas Claims Missouri
+news_event = {
+	id = apocnews.1
+	title = apocnews.1.t
+	desc = apocnews.1.d
+	picture = GFX_news_event_002
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = apocnews.1.a
+		trigger = {
+			NOT = {
+				TAG = KSC
+			}
+		}
+	}
+	option = {
+		name = apocnews.1.b
+		trigger = { TAG = KSC }
+	}
+	option = {
+		name = apocnews.1.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = apocnews.1.e
+		trigger = {
+			NOT = {
+				TAG = RAD
+			}
+			is_in_faction_with = GER
+		}
+	}
+}

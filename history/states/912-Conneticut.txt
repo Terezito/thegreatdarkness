@@ -1,0 +1,32 @@
+
+state={
+	id=912
+	name="STATE_912"
+
+	history={
+		owner = RAD
+		buildings = {
+			infrastructure = 4
+			dockyard = 4
+			air_base = 10
+			9832 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = RAD
+		victory_points = {
+			9850 1 
+		}
+
+	}
+
+	provinces={
+		706 859 3806 3878 3894 6911 9673 9693 9774 11660 
+	}
+	manpower=3200200
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

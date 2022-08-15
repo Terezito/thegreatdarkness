@@ -1,0 +1,52 @@
+
+state={
+	id=854
+	name="STATE_854"
+	resources={
+		oil=180.000
+		aluminium=8.000
+	}
+
+	history={
+		owner = RAD
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 6
+			dockyard = 2
+			air_base = 10
+			1562 = {
+				naval_base = 10
+
+			}
+			9814 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			9814 30 
+		}
+		victory_points = {
+			1562 15 
+		}
+		2000.1.1 = {
+			buildings = {
+				industrial_complex = 7
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		823 986 1562 3784 3840 6861 6881 7517 9814 9855 10483 11757 11795 11859 11876 12374 
+	}
+	manpower=5677248
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

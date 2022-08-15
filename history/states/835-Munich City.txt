@@ -1,0 +1,39 @@
+
+state={
+	id=835
+	name="STATE_835"
+	resources={
+		aluminium=18.000
+	}
+
+	history={
+		owner = BAY
+		victory_points = {
+			692 20 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 6
+
+		}
+		add_core_of = GER
+		2000.1.1 = {
+			buildings = {
+				air_base = 10
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		692 3705 11653 
+	}
+	manpower=2679413
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=8.000
+}

@@ -1,0 +1,25 @@
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = RAD
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = RAD
+
+	}
+
+	provinces={
+		521 11516 
+	}
+	manpower=402000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
