@@ -1,0 +1,26 @@
+indiaNZ_category = {
+	priority = 8
+	
+	visible ={
+	tag = NZl
+	has_completed_focus = focus_india_expedition
+	}
+		
+	allowed = {
+		always = yes
+		
+		}
+	
+
+	
+	on_map_area = {
+		state = 422
+		state = 423
+		state = 424
+		state = 425
+		state = 320
+		state = 321
+		name = indiaNZ_category_map
+		zoom = 200
+	}
+}
