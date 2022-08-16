@@ -1,0 +1,75 @@
+ideas = {
+	country = {
+	
+		NZL_king_philip = {
+			
+			allowed = {
+				original_tag = NZL
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = NZL
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001				
+			}
+		}
+	NZL_Riots_in_the_streets ={
+		allowed = {
+			orginal_tag = NZL
+			}
+			
+		picture = king_edward
+		
+		removal_cost = -1
+		
+		modifier = {
+			industrial_capacity_factory = -0.2
+			stability_weekly = -0.01
+			local_resources_factor = -0.05
+		}
+		}
+		NZL_Food_For_Military_Service ={
+		allowed = {
+			orginal_tag = NZL
+			}
+			
+		picture = idea_generic_reserve_divisions
+		
+		removal_cost = -1
+		
+		modifier = {
+			weekly_manpower = 50
+			}
+		}
+		NZL_Supply_Rationing ={
+		allowed = {
+			orginal_tag = NZL
+			}
+			
+		picture = brittish_stoicism
+		
+		removal_cost = -1
+		
+		modifier = {
+		stability_weekly = 0.01
+				}
+			}
+		}
+	}
