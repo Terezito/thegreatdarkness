@@ -2,6 +2,11 @@
 
 oob = "NZL_1936"
 
+set_variable = {
+	var = NZL_australia_colonization
+	value = 1
+}
+
 # Starting tech
 set_stability = 0.8
 set_war_support = 0.3

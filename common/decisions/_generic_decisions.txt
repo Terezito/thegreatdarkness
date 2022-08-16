@@ -148,7 +148,6 @@ political_actions = {
 			war_support_weekly = -0.01
 			political_power_gain = -0.5
 		}
-
 		days_remove = 90
 		days_re_enable = 360
 
@@ -3102,34 +3101,40 @@ indiaNZ_category_422 = {
     cost = 20
 
     available = {
-    has_stability > 0.1
+		has_stability > 0.1
+		check_variable = {
+			var = NZL_australia_colonization
+			value = 1
+			compare = equals
+		}
+	}
+	visible = {
+		tag = NZL
+		has_completed_focus = focus_india_expedition
+	}
+	
+	highlight_states = {
+    highlight_state_targets = {
+        state = 422
     }
-
-    allowed = {
-    }
-
-    trigger = {
-        has_country_flag = {
-        flag = NZL_colonization_flag
-        value > 0
-		
-        }
-    }
+    highlight_color_while_active = 3
+    highlight_color_before_active = 2
+	}
+	
 
     remove_effect = {
     set_state_owner = 422
-        set_country_flag = {
-            flag = NZL_colonization_flag
-            value = 1
-        }
+	set_state_controller = 422
+        set_variable = {
+			NZL_australia_colonization = 1
+		}
     }
 
     complete_effect = {
     add_stability = -0.1
-        set_country_flag = {
-            flag = NZL_colonization_flag
-            value = 0
-        }
+        set_variable = {
+			NZL_australia_colonization = 0
+		}
     }
 
     ai_will_do = {
@@ -3144,36 +3149,44 @@ indiaNZ_category_423 = {
     cost = 20
 
     available = {
-    has_stability > 0.1
+		has_stability > 0.1
+		check_variable = {
+			var = NZL_australia_colonization
+			value = 1
+			compare = equals
+		}
+	}
+	
+	highlight_states = {
+    highlight_state_targets = {
+		state = 423
     }
+	highlight_color_while_active = 3
+    highlight_color_before_active = 2
+	}
+	
+	visible = {
+		tag = NZL
+		has_completed_focus = focus_india_expedition
+	}
 
-    trigger = {
-            has_country_flag = {
-            flag = NZL_colonization_flag
-            value > 0
-			
-            }
-        }
 
-    allowed = {
-        
-    }
 
     remove_effect = {
     set_state_owner = 423
     set_state_owner = 320
-        set_country_flag = {
-            flag = NZL_colonization_flag
-            value = 0
-        }
+	set_state_controller = 423
+	set_state_controller = 320
+        set_variable = {
+			NZL_australia_colonization = 1
+		}
     }
 
     complete_effect = {
         add_stability = -0.1
-        set_country_flag = {
-            flag = NZL_colonization_flag
-            value = 1
-        }
+        set_variable = {
+			NZL_australia_colonization = 0
+		}
     }
 
     ai_will_do = {
@@ -3187,36 +3200,42 @@ indiaNZ_category_424 = {
     fire_only_once = yes
     days_remove = 50
     cost = 20
-
-    trigger = {
-        has_country_flag = {
-            flag = NZL_colonization_flag
-            value > 0
-			
-            }
-        }
+	visible = {
+		tag = NZL
+		has_completed_focus = focus_india_expedition
+	}
+	highlight_states = {
+    highlight_state_targets = {
+		state = 424
+    }
+	highlight_color_while_active = 3
+    highlight_color_before_active = 2
+	}
+	
 
     available = {
-        has_stability > 0.1
-        
-    }
-
+		has_stability > 0.1
+		check_variable = {
+			var = NZL_australia_colonization
+			value = 1
+			compare = equals
+		}
+	}
 
     remove_effect = {
     set_state_owner = 424
-        set_country_flag = {
-            flag = my_flag
-            value = 0
-        }
+	set_state_controller = 424
+        set_variable = {
+			NZL_australia_colonization = 1
+		}
     }
 
     complete_effect = {
     add_stability = -0.1
         set_state_owner = 424
-        set_country_flag = {
-            flag = my_flag
-            value = 1
-        }
+        set_variable = {
+			NZL_australia_colonization = 0
+		}
     }
 
     ai_will_do = {
@@ -3230,34 +3249,44 @@ indiaNZ_category_425 = {
     fire_only_once = yes
     days_remove = 50
     cost = 20
+	
+	visible = {
+		tag = NZL
+		has_completed_focus = focus_india_expedition
+	}
+	highlight_states = {
+    highlight_state_targets = {
+		state = 425
+    }
+	highlight_color_while_active = 3
+    highlight_color_before_active = 2
+	}
 
-    trigger = {
-        has_country_flag = {
-            flag = NZL_colonization_flag
-            value > 0
-            }
-        }
 
     available = {
-        has_stability > 0.1
-    }
+		has_stability > 0.1
+		check_variable = {
+			var = NZL_australia_colonization
+			value = 1
+			compare = equals
+		}
+	}
 
 
     remove_effect = {
     set_state_owner = 424
-        set_country_flag = {
-            flag = my_flag
-            value = 0
-        }
-    }
+	set_state_controller = 424
+        set_variable = {
+			NZL_australia_colonization = 1
+		}
+	}
 
     complete_effect = {
     add_stability = -0.1
         set_state_owner = 424
-        set_country_flag = {
-            flag = my_flag
-            value = 1
-        }
+        set_variable = {
+			NZL_australia_colonization = 0
+		}
     }
 
     ai_will_do = {

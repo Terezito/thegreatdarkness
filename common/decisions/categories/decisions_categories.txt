@@ -2,8 +2,8 @@ indiaNZ_category = {
 	priority = 8
 	
 	visible ={
-	tag = NZl
-	has_completed_focus = focus_india_expedition
+		tag = NZL
+		has_completed_focus = focus_india_expedition
 	}
 		
 	allowed = {
