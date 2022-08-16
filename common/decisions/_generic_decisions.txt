@@ -3232,7 +3232,6 @@ indiaNZ_category_424 = {
 
     complete_effect = {
     add_stability = -0.1
-        set_state_owner = 424
         set_variable = {
 			NZL_australia_colonization = 0
 		}
@@ -3283,7 +3282,6 @@ indiaNZ_category_425 = {
 
     complete_effect = {
     add_stability = -0.1
-        set_state_owner = 424
         set_variable = {
 			NZL_australia_colonization = 0
 		}
