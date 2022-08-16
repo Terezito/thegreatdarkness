@@ -3273,8 +3273,8 @@ indiaNZ_category_425 = {
 
 
     remove_effect = {
-    set_state_owner = 424
-	set_state_controller = 424
+    set_state_owner = 425
+	set_state_controller = 425
         set_variable = {
 			NZL_australia_colonization = 1
 		}
