@@ -1,0 +1,376 @@
+focus_tree = {
+	id = Zelandia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NZL
+			
+		}
+	}
+	
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1600 }
+
+	focus = {
+		id = NZL_the_safe_zone
+		icon = GFX_goal_generic_propaganda
+		x = 10
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = { ruling_only = yes character =NZL_peter_fraser}
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { not = { has_dlc = "Man the Guns" } }
+				add_manpower = 6000
+			}
+			else = {
+				add_manpower = 3000
+				add_legitimacy = 20
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+		}
+	}
+	
+	focus = {
+		id = NZL_industrial_revitalization
+		prerequisite = { focus = NZL_the_safe_zone }
+		icon = GFX_goal_generic_construction
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Kiwi Revitalization!"
+				bonus = 0.75
+				uses = 1
+				category = industry
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ae_davy
+		}
+	}
+
+	focus = {
+		id = NZL_The_Opposition
+		prerequisite = { focus = NZL_industrial_revitalization }
+		icon = GFX_goal_nzl_computing
+		cost = 7
+		x = 10
+		y = 2
+		completion_reward = {
+			country_event = zealandianews.1
+		}
+	}
+	focus = {
+		id = NZL_Crack_Down_On_Riots
+		prerequisite = { focus = NZL_The_Opposition }
+		icon = GFX_focus_nzl_computing
+		x = 0
+		y = 1
+			completion_reward = {
+				Add_stability = 0.25
+				remove_ideas = NZL_Riots_in_the_streets
+				}
+		relative_position_id = NZL_The_Opposition
+		
+		cost = 5
+		}	
+	focus = {
+		id = NZL_Brainstorm_New_Military_Designs
+		prerequisite = { focus = NZL_The_Opposition }
+		icon = GFX_focus_nzl_computing
+		x = 2
+		y = 1
+		relative_position_id = NZL_The_Opposition
+			completion_reward = {
+			add_tech_bonus = {
+				name = "New Ways to Kill."
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+				}
+			}
+			cost = 7
+		}	
+	focus = {
+		id = NZL_Roads_Bridges_Dams_Oh_My
+		prerequisite = { focus = NZL_The_Opposition }
+		icon = GFX_focus_nzl_computing
+		x = -2
+		y = 1
+		relative_position_id = NZL_The_Opposition
+		completion_reward = { 
+			if = {
+				limit = { has_full_control_of_state = 983 }
+				983 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 984 }
+				984 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}	
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 723 }
+				723 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}	
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 284 }
+				284 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 9817					
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 985 }
+				985 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+
+					add_building_construction = {
+						type = industrial_complex
+						level = 1	
+						instant_build = yes
+					}
+				}
+			}
+		}
+	cost = 10		
+	}
+	focus = {
+		id = NZL_Confiscate_Personal_Weapons
+		prerequisite = { focus = NZL_Crack_Down_On_Riots }
+		icon = GFX_focus_nzl_computing
+		x = 0
+		y = 2
+		relative_position_id = NZL_The_Opposition
+		completion_reward = {
+				Add_stability = -0.1
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				}
+		}
+		cost = 10
+		}
+	focus = {
+		id = NZL_Keep_An_Eye_On_Nixon
+		prerequisite = { focus = NZL_Confiscate_Personal_Weapons }
+		icon = GFX_focus_nzl_computing
+		x = 0
+		y = 3
+		relative_position_id = NZL_The_Opposition
+				completion_reward = {
+			country_event = zealandiaparliment.1
+		}
+		cost = 1
+	}
+	focus = {
+		id = NZL_Industry_At_The_End_Of_The_World
+		prerequisite = { focus = NZL_Roads_Bridges_Dams_Oh_My }
+		icon = GFX_focus_nzl_computing
+		x = -2
+		y = 2
+		relative_position_id = NZL_The_Opposition
+			completion_reward = { 
+			if = {
+				limit = { has_full_control_of_state = 284 }
+				284 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+			}
+			cost = 10
+		}
+	focus = {
+		id = NZL_New_Industrial_Designs
+		prerequisite = { focus = NZL_Industry_At_The_End_Of_The_World }
+		icon = GFX_focus_nzl_computing
+		x = -2
+		y = 3
+		relative_position_id = NZL_The_Opposition
+			completion_reward = {
+			add_tech_bonus = {
+				name = "Industrial Makeover"
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+		cost = 10
+	}
+		Note: when/if there will be a ration system implimented, expand upon this focus.
+	focus = {
+		id = NZL_Initiate_Supply_rationing_Programs
+		prerequisite = { focus = NZL_Brainstorm_New_Military_Designs }
+		icon = GFX_focus_nzl_computing
+		x = 2
+		y = 2
+		relative_position_id = NZL_The_Opposition
+		completion_reward = {
+				add_ideas = NZL_Supply_Rationing
+			}
+			cost = 4
+		}	
+	focus = {
+		id = NZL_Food_For_Military_Service
+		prerequisite = { focus = NZL_Initiate_Supply_rationing_Programs }
+		icon = GFX_focus_nzl_computing
+		x = 2
+		y = 3
+		relative_position_id = NZL_The_Opposition
+			completion_reward = {
+			add_ideas = NZL_Food_For_Military_Service
+			}
+			cost = 4
+		}	
+	focus = {
+		id = NZL_elections
+		prerequisite = { focus = NZL_New_Industrial_Designs }
+		prerequisite = { focus = NZL_Keep_An_Eye_On_Nixon }
+		prerequisite = { focus = NZL_Food_For_Military_Service }
+		icon = GFX_focus_nzl_computing
+		x = 0
+		y = 2
+		relative_position_id = NZL_Keep_An_Eye_On_Nixon
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		date > 1963.10.17
+		}
+		
+		search_filters = { Political }
+		completion_reward = {
+
+			country_event = zealandia.1
+		}
+	}
+	
+	focus = {
+		id = NZL_Nixon_Comes_Out_On_Top
+		icon = GFX_goal_generic_propaganda
+		cost = 0
+		available = {
+			OR = {
+			hidden_trigger = {
+				has_country_leader = {
+					name = "Richard Nixon"
+					ruling_only = yes
+					}
+			}
+			has_country_leader = {
+				name = "Richard Nixon"
+				ruling_only = yes
+				}
+			}
+		}
+		bypass = {
+			hidden_trigger = {
+				has_country_leader = {
+					name = "Richard Nixon"
+					ruling_only = yes
+					}
+			}
+			has_country_leader = {
+				name = "Richard Nixon"
+				ruling_only = yes
+				}
+		}
+		prerequisite = {
+			focus = NZL_elections
+		}
+		relative_position_id = NZL_elections
+		x = -13
+		y = 1
+
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = yes
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		country_event = zealandianews.2
+		}
+	}	
+	
