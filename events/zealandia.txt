@@ -1,0 +1,312 @@
+add_namespace = zealandia
+add_namespace = zealandianews
+add_namespace = zealandiaparliment
+
+# NixonFoundAlive
+news_event = {
+	id = zealandianews.1
+	title = zealandianews.1.t
+	desc = zealandianews.1.d
+	picture = GFX_news_event_003
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zealandianews.1.a
+		trigger = {
+			NOT = {
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = zealandianews.1.b
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = zealandianews.1.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = zealandianews.1.e
+		trigger = {
+			NOT = {
+				TAG = RAD
+			}
+			is_in_faction_with = RAD
+		}
+	}
+}
+country_event = {
+	id = zealandia.1
+	title = zealandia.1.t
+	desc = zealandia.1.d
+	picture = GFX_report_event_usa_election_roosevelt_macarthur
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zealandia.1.a
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		create_country_leader = {
+			name = "Keith Holyoake"
+			desc = "POLITICS_KEITH_DESC"
+			picture = gfx/leaders/NZL/Portrait_NewZealand_Keith.dds
+			expire = "1983.1.1"
+			ideology = liberalism
+			traits = {
+			
+			}
+
+		}
+	}
+
+	option = {
+		name = zealandia.1.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		create_country_leader = {
+			name = "Richard Nixon"
+			desc = "POLITICS_NIXON_DESC"
+			picture = gfx/leaders/NZL/Portrait_NewZealand_Nixon.dds
+			expire = "1994.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		country_event = zealandianews.2
+	}
+}
+
+# NixonWins
+news_event = {
+	id = zealandianews.2
+	title = zealandianews.2.t
+	desc = zealandianews.2.d
+	picture = GFX_news_event_004
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zealandianews.2.a
+		trigger = {
+			NOT = {
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = zealandianews.2.b
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = zealandianews.2.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = zealandianews.2.e
+		trigger = {
+			NOT = {
+				TAG = RAD
+			}
+			is_in_faction_with = RAD
+		}
+	}
+}
+
+# AustraliaQuestion
+news_event = {
+	id = zealandianews.3
+	title = zealandianews.3.t
+	desc = zealandianews.3.d
+	picture = GFX_news_event_005
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zealandianews.3.a
+		trigger = {
+			NOT = {
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = zealandianews.3.b
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = zealandianews.3.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = zealandianews.3.e
+		trigger = {
+			NOT = {
+				TAG = RAD
+			}
+			is_in_faction_with = RAD
+		}
+	}
+}
+ 
+# Nixon Takes Control
+country_event = {
+	id =  zealandia.2
+	
+	trigger = {
+	date < 1961.1.1
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	hidden = yes
+
+	immediate = {
+		set_cosmetic_tag = ENG_england
+		set_global_flag = ENG_became_england
+	}
+}
+
+country_event = {
+	id = zealandia.3
+	title = zealandia.3.t
+	desc = zealandia.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_ideas = ENG_king_philip
+			set_country_flag = ENG_philip_abdicated
+		}
+	}
+
+	option = {
+		name = zealandia.3.a
+		effect_tooltip = {
+			remove_ideas = ENG_king_philip
+		}
+	}
+}
+
+# Nixon Takes Full Control
+news_event = {
+	id = zealandianews.4
+	title = zealandianews.4.t
+	desc = zealandianews.4.d
+	picture = GFX_news_event_007
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zealandianews.4.a
+		trigger = {
+			NOT = {
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = zealandianews.4.b
+		ai_chance = {
+			factor = 0
+		}
+		country_event = { id = zealandia.3 days = 1 random_days = 1 }
+	}
+	option = {
+		name = zealandianews.4.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = zealandianews.4.e
+		trigger = {
+			NOT = {
+				TAG = RAD
+			}
+			is_in_faction_with = RAD
+		}
+	}
+}
+
+# Zealandia Leaves Earth
+news_event = {
+	id = zealandianews.5
+	title = zealandianews.5.t
+	desc = zealandianews.5.d
+	picture = GFX_news_event_006
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zealandianews.5.a
+		trigger = {
+			NOT = {
+				TAG = NZL
+			}
+		}
+	}
+	option = {
+		name = zealandianews.5.b
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = zealandianews.5.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = zealandianews.5.e
+		trigger = {
+			NOT = {
+				TAG = RAD
+			}
+			is_in_faction_with = RAD
+		}
+	}
+}
+
+#Parliamentary Meeting: The Yank in New Zealander Clothing
+news_event = {
+	id = zealandiaparliment.1
+	title = Parliamentary_Meeting:_The_Yank_in_New_Zealander_Clothing
+	desc = zealandiaparliment.1.d
+	picture = GFX_news_event_003	
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = zealandiaparliment.1.b
+		trigger = {
+			NOT = {
+				TAG = NZL
+			}
+		}
+	}
+}
