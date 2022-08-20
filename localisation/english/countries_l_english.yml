@@ -3696,3 +3696,5 @@
  SIK_SOV_communism_subject:0 "Soviet Socialist Republic of Sinkiang"
  SIK_communism_subject_DEF:0 "the Soviet Socialist Republic of Sinkiang"
  SIK_communism_subject_ADJ:0 "Sinkiang"
+ MCS_communism:0 "Moscow Soviet"
+ MCS_communism_DEF:0 "The Moscow Soviet"
