@@ -140,7 +140,7 @@ set_stability = 0.75
 }
 
 set_politics = {
-	ruling_party = scp_foundation
+	ruling_party = technocracy
 	last_election = "2000.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -150,7 +150,7 @@ set_popularities = {
 	democratic = 30
 	fascism = 5
 	communism = 5
-	scp_foundation = 60
+	technocracy = 60
 }
 
 add_ideas = {
@@ -162,7 +162,7 @@ create_country_leader = {
 	desc = ""
 	picture = gfx/leaders/ENG/Portrait_SCP_Britain_Aaron_Siegel.dds
 	expire = "2022.2.22"
-	ideology = scp_admin
+	ideology = shadow_government
 	traits = {
 	}
 }
