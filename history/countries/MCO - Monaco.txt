@@ -25,10 +25,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
 	fascism = 0
 	communism = 0
-	neutrality = 100
+	Despot = 100
 }
 
 add_ideas = {
@@ -43,7 +42,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Monaco_Loius.dds"
 	expire = "1960.1.1"
-	ideology = despotism
+	ideology = oligarchism
 	traits = {
 		
 	}

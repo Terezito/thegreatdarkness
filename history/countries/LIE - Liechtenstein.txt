@@ -19,10 +19,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
 	fascism = 0
 	communism = 0
-	neutrality = 100
+	monarchism = 100
 }
 
 add_ideas = {
@@ -37,7 +36,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Liechtenstein_franz.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = absolute_monarchy
 	traits = {
 		#
 	}

@@ -107,17 +107,18 @@ set_convoys = 10
 
 set_convoys = 5
 set_politics = {
-	ruling_party = democratic
+	ruling_party = right_wing_democratic
 	last_election = "1920.2.11"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 50
+	right_wing_democratic = 45
+	left_wing_democratic = 5
 	communism = 25
 	fascism = 10
-	neutrality = 5
-	scp_foundation = 10
+	Despot = 5
+	technocracy = 10
 }
 
 add_ideas = {
@@ -127,18 +128,19 @@ add_ideas = {
 
 1925.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = right_wing_democratic
 		last_election = "1925.5.1"
 		election_frequency = 48  
 		elections_allowed = no
 	}
 
 set_popularities = {
-	democratic = 50
+	right_wing_democratic = 45
+	left_wing_democratic = 5
 	communism = 25
 	fascism = 10
-	neutrality = 5
-	scp_foundation = 10
+	Despot = 5
+	technocracy = 10
 }
 
 

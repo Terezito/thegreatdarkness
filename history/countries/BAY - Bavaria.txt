@@ -147,7 +147,8 @@ set_politics = {
 
 }
 set_popularities = {
-	democratic = 30
+	right_wing_democratic = 25
+	left_wing_democratic = 5
 	fascism = 60
 	communism = 10
 }
@@ -164,7 +165,7 @@ create_country_leader = {
 	desc = ""
 	picture = gfx/leaders/BAY/Portrait_Germany_Adolf_Hitler.dds
 	expire = "1970.1.1"
-	ideology = nazism
+	ideology = neo_nazism
 	traits = {
 	}
 	dictator

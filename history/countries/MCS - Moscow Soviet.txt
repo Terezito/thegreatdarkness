@@ -147,10 +147,11 @@ set_politics = {
 
 }
 set_popularities = {
-	democratic = 5
+	technocracy = 5
 	fascism = 5
-	neutrality = 5
-	communism = 85
+	Despot = 5
+	communism = 77
+	anarchism = 8
 }
 
 add_ideas = {
