@@ -470,8 +470,78 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_scp_foundation_group"
-		texturefile = "gfx/interface/ideologies/scp_foundation_group.dds"
+		name = "GFX_ideology_technocracy"
+		texturefile = "gfx/interface/ideologies/technocracy.dds"
+	}
+
+		spriteType = {
+		name = "GFX_ideology_geniocracy"
+		texturefile = "gfx/interface/ideologies/geniocracy.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_shadow_government"
+		texturefile = "gfx/interface/ideologies/shadow_government.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_conservative"
+		texturefile = "gfx/interface/ideologies/conservative.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_right_liberalism"
+		texturefile = "gfx/interface/ideologies/right_liberalism.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_reactionary"
+		texturefile = "gfx/interface/ideologies/reactionary.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_social_democracy"
+		texturefile = "gfx/interface/ideologies/social_democracy.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_left_liberalism"
+		texturefile = "gfx/interface/ideologies/left_liberalism.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_futurism"
+		texturefile = "gfx/interface/ideologies/futurism.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_absolute_monarchy"
+		texturefile = "gfx/interface/ideologies/absolute_monarchy.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_aristocratic_council"
+		texturefile = "gfx/interface/ideologies/aristocratic_council.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_tribal_council"
+		texturefile = "gfx/interface/ideologies/tribal_council.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_dictatorship"
+		texturefile = "gfx/interface/ideologies/dictatorship.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_military_junta"
+		texturefile = "gfx/interface/ideologies/military_junta.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_oligarchism"
+		texturefile = "gfx/interface/ideologies/oligarchism.dds"
 	}
 	
 	spriteType = {
