@@ -284,14 +284,21 @@ set_convoys = 500
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = Despot
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 99
-	communism = 1
+	right_wing_democratic = 15
+	left_wing_democratic = 15
+	monarchism = 0
+	fascism = 0
+	communism = 0
+	technocracy = 0
+	despot = 70
+	anarchism = 0
+	fundamentalism = 0
 }
 
 add_ideas = {
@@ -311,10 +318,10 @@ set_autonomy = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = Despot
 		last_election = "1936.11.3"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }
 

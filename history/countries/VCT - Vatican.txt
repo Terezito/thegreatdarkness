@@ -10,16 +10,21 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fundamentalism
 	last_election = "1922.2.6"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
+	right_wing_democratic = 0
+	left_wing_democratic = 0
+	monarchism = 0
 	fascism = 0
 	communism = 0
-	neutrality = 100
+	technocracy = 0
+	despot = 0
+	anarchism = 0
+	fundamentalism = 100
 }
 
 add_ideas = {
@@ -35,7 +40,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Vatican_Pope.dds"
 	expire = "1939.2.11"
-	ideology = despotism
+	ideology = theocracy
 	traits = {
 		#
 	}
@@ -44,16 +49,21 @@ create_country_leader = {
 1939.1.1 = {
 	
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = fundamentalism
 		last_election = "1939.2.10"
 		election_frequency = 60
 		elections_allowed = no
 	}
 	set_popularities = {
-		democratic = 0
-		fascism = 0
-		communism = 0
-		neutrality = 100
+	right_wing_democratic = 0
+	left_wing_democratic = 0
+	monarchism = 0
+	fascism = 0
+	communism = 0
+	technocracy = 0
+	despot = 0
+	anarchism = 0
+	fundamentalism = 100
 	}
 
 	create_country_leader = {
@@ -61,7 +71,7 @@ create_country_leader = {
 		desc = ""
 		picture = "Portrait_Vatican_PiusXII.dds"
 		expire = "1985.10.9"
-		ideology = despotism
+		ideology = theocracy
 		traits = {
 			#
 		}
