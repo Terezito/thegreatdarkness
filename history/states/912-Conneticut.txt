@@ -4,7 +4,7 @@ state={
 	name="STATE_912"
 
 	history={
-		owner = RAD
+		owner = NYC
 		buildings = {
 			infrastructure = 4
 			dockyard = 4
