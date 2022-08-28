@@ -178,7 +178,7 @@ ideologies = {
 	
 		types = {
 		
-			technocracy = {
+			classical_technocracy = {
 			}
 			
 			geniocracy = {
