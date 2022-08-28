@@ -470,8 +470,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_technocracy"
-		texturefile = "gfx/interface/ideologies/technocracy.dds"
+		name = "GFX_ideology_classical_technocracy"
+		texturefile = "gfx/interface/ideologies/classical_technocracy.dds"
 	}
 
 		spriteType = {
@@ -542,6 +542,11 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_ideology_oligarchism"
 		texturefile = "gfx/interface/ideologies/oligarchism.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_anarcho_egosists"
+		texturefile = "gfx/interface/ideologies/anarcho_egosists.dds"
 	}
 	
 	spriteType = {
