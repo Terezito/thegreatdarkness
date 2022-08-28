@@ -12,11 +12,17 @@ set_national_unity = 0.9
 
 set_politics = {
 
-	parties = {
-		anarchism = { 
-			popularity = 100
-		}
-	}
+set_popularities = {
+	right_wing_democratic = 0
+	left_wing_democratic = 0
+	monarchism = 0
+	fascism = 0
+	communism = 0
+	technocracy = 0
+	despot = 0
+	anarchism = 100
+	fundamentalism = 0
+}
 	
 	ruling_party = anarchism
 	last_election = "2000.1.1"
