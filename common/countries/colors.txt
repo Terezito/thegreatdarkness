@@ -819,3 +819,8 @@ MCS = {
 	color = rgb { 150  13  24 }
 	color_ui = rgb { 150  13  24 }
 }
+
+NYC = {
+	color = rgb { 255  155  0 }
+	color_ui = rgb { 255  155  0 }
+}
