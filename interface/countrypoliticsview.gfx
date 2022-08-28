@@ -569,6 +569,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/anarcho_monarchists.dds"
 	}
 	
+		spriteType = {
+		name = "GFX_ideology_marxism"
+		texturefile = "gfx/interface/ideologies/marxism.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_soviet_democracy"
+		texturefile = "gfx/interface/ideologies/soviet_democracy.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_stalinism"
+		texturefile = "gfx/interface/ideologies/stalinism.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_ideology_maoism"
+		texturefile = "gfx/interface/ideologies/maoism.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_ideology_democratic_group"
 		texturefile = "gfx/interface/ideologies/democratic_group.dds"
