@@ -824,3 +824,8 @@ NYC = {
 	color = rgb { 255  155  0 }
 	color_ui = rgb { 255  155  0 }
 }
+
+BGD = {
+	color = rgb { 72  73  126 }
+	color_ui = rgb { 72  73  126 }
+}
